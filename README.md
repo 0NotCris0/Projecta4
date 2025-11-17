@@ -2,6 +2,27 @@
 
 Després de setmanes convivint amb el ritme imprevisible d’una consultora tecnològica, arriba el darrer capítol de la trilogia **EverPia**. És un moment que combina entusiasme, maduresa i una sensació molt real: aquesta etapa s’acaba, i comença alguna cosa nova.
 
+ - [Tasca01](Tasca01)
+ - [Tasca02](Tasca02)
+ - [Tasca03](Tasca03)
+ - [Tasca04](Tasca04)
+ - [Tasca05](Tasca05)
+ - [Tasca06](Tasca06)
+ - [Tasca07](Tasca07)
+ - [Tasca08](Tasca08)
+ - [Tasca09](Tasca09)
+ - [Tasca10](Tasca10)
+ - [Tasca10](Tasca11)
+ - [Tasca10](Tasca12)
+ - [Tasca10](Tasca13)
+ - [Tasca10](Tasca14)
+ - [Tasca10](Tasca15)
+ - [producte01](producte01)
+ - [producte02](producte02)
+ - [producte03](producte03)
+
+
+
 A les consultores, la trajectòria professional segueix un patró gairebé universal:  
 **Qui entra com a júnior ho fa sense saber gaire què s’hi trobarà, però en surt transformat.**
 
