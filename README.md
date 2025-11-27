@@ -17,7 +17,7 @@ Després de setmanes convivint amb el ritme imprevisible d’una consultora tecn
  - [Tasca13](Tasca13)
  - [Tasca14](Tasca14)
  - [Tasca15](Tasca15)
- - [Tasca16](Tasca15)
+ - [Tasca16](Tasca16)
  - [producte01](producte01)
  - [producte02](producte02)
  - [producte03](producte03)
