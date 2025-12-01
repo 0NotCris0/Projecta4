@@ -1,5 +1,5 @@
 # T05: Accés Remot – Connexió via SSH  
-Documentació millorada
+
 
 ## 1. Creació de les màquines virtuals  
 Creem dues màquines virtuals:  
