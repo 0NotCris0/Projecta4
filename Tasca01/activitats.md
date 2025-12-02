@@ -113,7 +113,7 @@ Les **bases de dades** són crítiques perquè tenen canvis constants i només p
 |           | Documents de Projectes | Còpia completa setmanal            | NAS / Cloud |
 |           | Carpetes Personals     | Còpia completa setmanal            | NAS / Cloud |
 
-*Nota:* Les còpies incrementals es fan diverses vegades al dia per les bases de dades, mentre que la resta només una vegada diària.
+Les còpies incrementals es fan diverses vegades al dia per les bases de dades, mentre que la resta només una vegada diària.
 
 ---
 
