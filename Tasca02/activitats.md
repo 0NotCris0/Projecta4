@@ -201,3 +201,5 @@ I aquí podem escollir la ruta, però deixarem l’original.
 I podrem veure que ja està tot una altra vegada.
 
 ![](img/50.png)
+
+
