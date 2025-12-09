@@ -203,3 +203,5 @@ I podrem veure que ja està tot una altra vegada.
 ![](img/50.png)
 
 
+## Part 2: Còpia seguretat servidor Linux
+
