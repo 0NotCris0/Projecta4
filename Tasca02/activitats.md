@@ -348,7 +348,7 @@ ls
 Despres el seguent pas sera crear un nou fitxer per fer un altre comprovacio.
 
 ```bash
-fallocate -l 10MB archivo5
+fallocate -l 4MB archivo5
 ``` 
 
 ![](img/70.png)
