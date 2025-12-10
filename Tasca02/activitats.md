@@ -413,4 +413,7 @@ ls -l
 
 Per ultim el programem a cron perquè s’executi de dilluns a dissabte a les 23:00.
 
+
 ![](img/80.png)
+
+- [Tornar al enunciat](README.md)
