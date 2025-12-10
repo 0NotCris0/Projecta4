@@ -3,6 +3,7 @@
 El primer que farem seran crear dos maquines virtuals, una sera el server NFS que sera un ubuntu i per ultim el client que sera un Zorin OS.
 
 img 1
+
 img 2
 
 
@@ -11,6 +12,7 @@ img 2
 Primer entrarem al servidor i actualizarem tot amb apt update && apt upgrade, i crearem dos grups que sera Devs i Admins. 
 
 img 3
+
 img 4
 
 Lo seguent sera crear un usuari que es digui devs01 i que sigui membre del grup devs i un altre usuari que sera admin01 i del grup admins. 

@@ -2,8 +2,6 @@
 
 El primer que farem serà crear dues màquines virtuals, la de Windows i una altra d’Ubuntu, i les configurarem amb aquestes especificacions. En la de Windows crearem dos discs: el del sistema en general i el segon per fer les còpies de seguretat, que serà de 10GB.
 
-![](img/1.png)
-
 ![](img/2.png)
 
 ## Part 1: Còpia de seguretat dels equips clients Windows
@@ -204,4 +202,136 @@ I podrem veure que ja està tot una altra vegada.
 
 
 ## Part 2: Còpia seguretat servidor Linux
+
+Ara continuarem amb el servidor de linux que el configurarem amb un disc secundari de 10GB. I les seguents especificacions. 
+
+![](img/54.png)
+
+Entrarem en la maquina de linux i comprovarem que veu el segon disk. Amb aquesta comanda.
+
+```bash
+sudo fdisk -l
+``` 
+
+img 55 
+
+Ara crearem una particio nova en el segon disc de 10GB.
+Posarem primer N(nova particio), P(Una particio primaria), posarem el que surt per defecte i per ultim W(per guardar.)
+
+```bash
+sudo fdisk /dev/sdb
+```
+
+img 56
+
+I ara podem veure que s'ha creat correctament. 
+
+```bash
+sudo fdisk -l
+``` 
+img 57
+
+Haurem de posarle en el format XFS amb aquesta comanda.
+
+```bash
+sudo mkfs.xfs /dev/sdb1
+```
+
+img 58
+
+Creem el punt de muntatge manualment a /media/backup. El primer sera crear la carpeta.
+
+```bash
+mkdir /media/backup
+```
+
+Lo seguent sera montar. 
+
+```bash
+mount /dev/sdb1 /media/backup
+```
+
+img 59
+
+Ara ja podrem instalar duplicity.
+
+```bash 
+apt install duplicity
+```
+
+img 60
+
+Despres podem comprovar que s'ha instalat correctament.
+
+```bash
+duplicity --version
+``` 
+
+Despres creem dos usuaris adicionals amb carpetas personals. Que seran user2 i user3.
+
+```bash
+useradd -m -s /bin/bash user2
+useradd -m -s /bin/bash user3
+```
+
+img 61
+
+Per comprovar que s'han creat correctament farem.
+
+```bash
+grep -E "user2|user3" /etc/passwd
+``` 
+
+img 62
+
+Li configurarem la contrasenya amb aquesta comanda.
+
+```bash
+passwd user2
+passwd user3
+```
+
+img 63
+
+Crearem arxius buit sense proposit nomes perqu estiguin alla per poder fer la prova en el carpeta de home del usuari.
+
+```bash 
+fallocate -l 10MB archivo1
+...
+```
+
+img64
+
+El seguent pas sera fer la copia de seguretat de la carpeta /home amb la seguent comanda.
+
+```bash 
+sudo duplicity full /home/ file:///media/backup/
+``` 
+
+img 65
+
+Despres comprovem que s'ha fet correctament en /media/backup/.
+
+```bash
+ls /media/backup
+```
+
+img 66
+
+Ara borrarem alguns arxius per poder despres fer el backup.
+
+```bash
+rm archivo1
+...
+```
+
+img 67
+
+El seguent sera fer la restauracio de el /home de usuari ho farem amb.
+
+```bash
+duplicity restore file:///media/backup/ /home/usuari
+```
+
+img 68
 
