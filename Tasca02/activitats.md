@@ -413,7 +413,7 @@ ls -l
 
 ![](img/79.png)
 
-Per ultim el programem a cron perquè s’executi de dilluns a dissabte a les 23:00.
+Per últim el programem a cron perquè s’executi de dilluns a dissabte a les 23:00.
 
 
 ![](img/80.png)
