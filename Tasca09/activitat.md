@@ -297,4 +297,5 @@ I per ultim podrem veure que podrem acedirt desde root.
 
 img 45
 
-##
+## Fase 4: L'Exportació de Desenvolupament (Permisos rw vs ro)
+
