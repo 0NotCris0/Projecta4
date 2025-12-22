@@ -402,4 +402,6 @@ Aquesta es una eina normal la veritat, tot el proces si s'ha de fer en molt ordi
 
 Tambe es recomana implementar un sistema d’autenticació centralitzada (com LDAP, FreeIPA) per evitar el error de no tenir els mateixos valors en UID i GID entre equips. 
 
-Tambe es podria evolucioanr a 
+Tambe es podria evolucioanr a NFSv4 que ofereix millor seguretat i suport per a autenticació forta amb Kerberos
+
+- [Tornar al enunciat](README.md)
